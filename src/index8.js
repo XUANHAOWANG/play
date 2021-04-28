@@ -131,9 +131,12 @@
 // console.log(a)
 
 //if 练习
-//prompt 弹出文本款并可以输入文本
-
-// var score=prompt('');
+// //prompt 弹出文本款并可以输入文本
+// while(true) {var score=prompt('please type youo score here');
+// if(score<=100&&score>=0){break
+    
+// } else {alert('score not valid')}
+// }
 // if (score>100||score<0||isNaN(score)){
 //     alert('fuck!!')
 // }else if(score==100){
@@ -145,6 +148,9 @@
 //     else if(score>=60){
 //         alert('you just pass')
 //     }
+// else{
+//     alert('we need talk');
+// };
 
     
 //     else{
@@ -229,15 +235,96 @@
 
 // };
 
-//while
+//while// do...while
 
-var a=0;
-var b=20;
-while(a<9,b>10){
-    a++,b--;
-   console.log(a,b);
-};
+// var a=0;
+// var b=20;
+// while(a<9,b>10){
+//     a++,b--;
+//    console.log(a,b);
+// };
+// //保证循环体执行一次
+// do{
+//     console.log(a++,b--)
+// }while(a<15,b>5)
 
-do{
-    console.log(a++,b--)
-}while(a<15,b>5)
+
+
+
+
+//while practices
+// var year=0;
+// var money=1000;
+
+// while(money<5000){
+// money=money*1.05,year++;
+// console.log(money,year)
+// };
+
+
+//for Loop
+//求1-100奇数和
+// var sum=0
+// for(i=1;i<100;i++){
+    
+//     if(i%2!=0){
+//      console.log(i)
+//       sum=sum+i
+//     };
+// };
+// console.log(sum)
+
+
+//1-100 7的倍数和
+// for(i=7,count=0,sum=0;i<100;i=i+7){
+//     if(i%7==0){
+
+//         console.log(i);
+//         sum =sum+i;
+//         count++
+//     }
+// }
+// console.log(sum)
+// console.log('thre are  '+count+' times  of  7 ')
+
+//水仙花 
+
+// for(i=100,hum=0,ten=0,ge=0;i<1000;i++) {
+// hum = parseInt(i/100);//取整百位数
+// ten=parseInt((i-hum*100)/10);//取整十位数
+// ge=i%10//取整个位数
+// if(hum*hum*hum+ten*ten*ten+ge*ge*ge==i){
+//     console.log(i);
+// }
+    
+// };
+
+// //取质数
+//     var num=+prompt('a number');
+//     var flag=true;
+   
+//      if (num>=2){
+//         for(i=2;i<num;i++){
+//         if(num%i==0){
+          
+//             flag=false;//使用标记 来检查质数
+
+//         }
+//         if(flag){
+//             alert('you did right');
+//             break;
+//         }else{
+//             alert('this if not a ...')
+//             break;
+//         }
+  
+//     } 
+// }
+
+for(i=2,sum=0;i<200;i++){
+    if(i%2==0){
+        console.log(i)
+        sum=sum+i
+    }
+}
+console.log(sum)
