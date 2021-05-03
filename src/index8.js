@@ -321,10 +321,181 @@
 //     } 
 // }
 
-for(i=2,sum=0;i<200;i++){
-    if(i%2==0){
-        console.log(i)
-        sum=sum+i
+//加强上面的代码
+//  var num=+prompt('input a number');
+
+ 
+
+//  for(i=2;i<num;i++){
+//      if(num%i==0){
+         
+//          alert('这不是质数');
+         
+
+//      }
+//      else{alert('这是质数')}
+//      break;
+//  };
+
+
+//页面输入*
+// for(i=0;i<5;i++){ //高度
+//  for(j=0;j<i+1;j++){//宽度
+// document.write('*')
+//  } document.write('<br/>')
+// }
+
+//倒三角
+// for(i=0;i<5;i++){
+//     for(j=0;j<i+1;j++){
+//         document.write('*')
+//     }document.write('<br/>')
+// }
+
+//99乘法表
+// for(i=1;i<10;i++){
+//     for(j=1;j<i+1;j++){
+//         document.write(i+'X'+j+'='+i*j)
+//     }document.write('<br/>')
+// }
+
+//打印100内所有质数
+// for(i=100;i>2;i--){
+    
+//    for(j=2;j<101;j++){
+//        if(i%j==0){
+//            break;
+           
+//        } else{
+//             console.log(i);
+//             break;
+//     }
+          
+           
+       
+//    }
+// }
+
+// //另一种思路 求100内质数  开平方根
+// console.time('a');
+//  var flag=true;
+// for(i=3;i<10000;i++){
+   
+//     for(j=2;j<=Math.sqrt(i);j++){
+//         if(i%j==0){
+           
+//            break;
+//         }
+//         if(flag){
+//             console.log(i);
+//            break;
+//         }
+//     }
+// }
+// console.timeEnd('a') 
+//break 和for循环 命名  
+// niba:for(i=0;i<10;i++){
+//     console.log(i)
+//     for(j=0;j<10;j++){
+// break niba;
+//     }
+// }
+
+//continued
+//跳过当此循环后继续执行
+// console.time('test')
+// for(i=1;i<5;i++){
+//     if(i==3){  //跳过3
+//         continue;
+//     }console.log(i)//1 2 4
+// }
+// console.timeEnd('test')
+//console.time() 计时器需要一个标识 console.log('test')
+
+//Math.sqrt() 开平方根
+
+// var a=Math.sqrt(36);
+// console.log(a);
+
+//课堂练习
+//firstfun([1,2,3],[5,6,7],[8,9,10])=>[1,2,3,4,5,6,7,8,9,10]
+
+// function firstfun(...args) {
+//     let result=[];
+//     for(i=0;i<(args.length);i++){
+//         result=result.concat(arguments[i])
+//     }console.log(result)
+// return result
+// };
+
+// firstfun([1,2,3],[5,6,7],[8,9,10])
+// function esSixFunc(...args) {
+//     return [].concat(...args)
+// }
+
+// //creat a function that takes two arguments(number.length)
+// //sendFunc(7,5)=>(7,14,21,28,35)
+// function secondFunc(number,length){
+//     let result=[];
+//     for (i=1;i<=length;i++){
+//         result.push(number*i);
+//     }
+//     console.log(result)
+//     return result;
+    
+// };
+// secondFunc(7,5)
+
+//change array order  123-321
+// function seFu(arr,str){
+//     switch(str){
+//         case 'Assending':
+//             return arr.sort((a,b)=>a-b);
+//             break;
+//             case 'Desending':
+//                 return arr.sort((a,b)=>b-a);
+//                 break;
+//                 default:return arr
+
+//     }
+// }
+// seFu([4,3,2,1],'Assending')
+// console.log(seFu(arr,str))
+
+//es6
+// const esFunc=(arr,str)=>
+// str==='Assending'?arr.sort((a,b)=>a-b): 
+// str==='Desending'?arr.sort((a,b)=>b-a):arr
+
+ //return ture if all par are true
+// const trueOrFalse = (...args) => args.every(Boolean);
+
+//an array containning a number of sub arrays 
+
+// function subArrays(a,b,c){
+   
+//     return Array(a).fill(Array(b).fill(c))
+// }
+
+
+// console.log(subArrays(5,5,10))
+
+//check subArrays
+
+function checkArray(a,b){
+ 
+       for(i=0;i<=a.length;i++){
+           
+           if(a[i]===b[i]){
+               return true
+           } else{
+               return false
+           }
+       }
+   
     }
-}
-console.log(sum)
+
+
+console.log(checkArray([1,2,3],[1,2,3,4,5,6,7]))
+console.log(checkArray([1,2,3],[1,1,3,4,5,6,7]))
+console.log(checkArray([1,2,3],[2,3,4,5,6,7]))
