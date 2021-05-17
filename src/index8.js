@@ -401,8 +401,8 @@
 //     }
 // }
 
-//continued
-//跳过当此循环后继续执行
+// continued
+// 跳过当此循环后继续执行
 // console.time('test')
 // for(i=1;i<5;i++){
 //     if(i==3){  //跳过3
@@ -410,15 +410,15 @@
 //     }console.log(i)//1 2 4
 // }
 // console.timeEnd('test')
-//console.time() 计时器需要一个标识 console.log('test')
+// console.time() 计时器需要一个标识 console.log('test')
 
-//Math.sqrt() 开平方根
+// Math.sqrt() 开平方根
 
 // var a=Math.sqrt(36);
 // console.log(a);
 
-//课堂练习
-//firstfun([1,2,3],[5,6,7],[8,9,10])=>[1,2,3,4,5,6,7,8,9,10]
+// 课堂练习
+// firstfun([1,2,3],[5,6,7],[8,9,10])=>[1,2,3,4,5,6,7,8,9,10]
 
 // function firstfun(...args) {
 //     let result=[];
@@ -446,7 +446,7 @@
 // };
 // secondFunc(7,5)
 
-//change array order  123-321
+// change array order  123-321
 // function seFu(arr,str){
 //     switch(str){
 //         case 'Assending':
@@ -462,15 +462,15 @@
 // seFu([4,3,2,1],'Assending')
 // console.log(seFu(arr,str))
 
-//es6
+// es6
 // const esFunc=(arr,str)=>
 // str==='Assending'?arr.sort((a,b)=>a-b): 
 // str==='Desending'?arr.sort((a,b)=>b-a):arr
 
- //return ture if all par are true
+//  return ture if all par are true
 // const trueOrFalse = (...args) => args.every(Boolean);
 
-//an array containning a number of sub arrays 
+// an array containning a number of sub arrays 
 
 // function subArrays(a,b,c){
    
@@ -480,7 +480,7 @@
 
 // console.log(subArrays(5,5,10))
 
-//check subArrays
+// check subArrays
 
 function checkArray(a,b){
  
