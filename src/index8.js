@@ -482,20 +482,20 @@
 
 // check subArrays
 
-function checkArray(a,b){
+// function checkArray(a,b){
  
-       for(i=0;i<=a.length;i++){
+//        for(i=0;i<=a.length;i++){
            
-           if(a[i]===b[i]){
-               return true
-           } else{
-               return false
-           }
-       }
+//            if(a[i]===b[i]){
+//                return true
+//            } else{
+//                return false
+//            }
+//        }
    
-    }
+//     }
 
 
-console.log(checkArray([1,2,3],[1,2,3,4,5,6,7]))
-console.log(checkArray([1,2,3],[1,1,3,4,5,6,7]))
-console.log(checkArray([1,2,3],[2,3,4,5,6,7]))
+// console.log(checkArray([1,2,3],[1,2,3,4,5,6,7]))
+// console.log(checkArray([1,2,3],[1,1,3,4,5,6,7]))
+// console.log(checkArray([1,2,3],[2,3,4,5,6,7]))

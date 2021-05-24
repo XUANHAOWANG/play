@@ -1,0 +1,9 @@
+header>nav>div>a{
+    background-color:black;;
+    cursor:pointer;
+}
+
+header>nav>div>div>A:hover{
+    background-color:black;
+    cursor:pointer;
+}

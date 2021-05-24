@@ -59,17 +59,19 @@
 // }
 // const depth=arr=>arr.length===1?arr:(arr[0],creatDepth(arr,slice[1]))
 
-
-function flatArr(){
-    let result=[];
-    if(arr ===undefined)return arr
-}
-arr.forEach(function(e) {
-    if Array.isArray(e){
-        result=result.concat(flatArr(e))
-    }else{
-if(typeof e==='function'){
-    result.push(e[])
-}
-    }
-})
+//搞不懂的练习
+// function flatArr(){
+//     let result=[];
+//     if(arr ===undefined)return arr
+// }
+// arr.forEach(function(e) {
+//     if(Array.isArray(e)) {
+//         result=result.concat(flatArr(e))
+//     }else{
+// if(typeof e==='function'){
+//     result.push(e[])
+// }else{
+//     result.push(e)
+// }
+//     }
+// })

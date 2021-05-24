@@ -174,7 +174,7 @@
 //以函数（function）调用时，this是window
 //以方法（method），this就是调用方法的那个对象
 function fun1(){
-    console.log(this.name)
+    console.log(this.name)//函数指向使用者
 }
 
 
@@ -185,10 +185,10 @@ var obj={
     sayName:fun1
 }
 
-obj.sayName()
+obj.sayName()//call function
 
 var obj2={
     name:'你妈妈',
     sayName:fun1,
 }
-obj2.sayName()
+obj2.sayName()//call function
