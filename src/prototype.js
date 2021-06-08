@@ -47,3 +47,4 @@ console.log(MyClass.prototype.hasOwnProperty('hasOwnProperty'));
 //如果没有则去原型中寻找
 //原型没有就去原型的原型中找
 console.log(mc.prototype.prototype.hasOwnProperty('hasOwnProperty'));
+//总共三段  第一段是声明对象 第二段是对象原型 第三段是原型中的原型

@@ -110,7 +110,7 @@ arr.sort(function(a,b){
      }
      )
 
-     arr.sort(function(a,b){return b-a})
+     arr.sort(function(a,b){return b-a})//降序排列 b-a
  console.log(arr);//数组正排序  按unicode 编码进行排序
 
 //  console.log(arr.reverse())//数组 倒排序
