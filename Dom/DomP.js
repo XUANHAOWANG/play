@@ -69,12 +69,3 @@ window.setInterval(next.onclick,1500);//通过计时器 设置轮播
 
 
 
-//DOM 查询
-var btnC=document.getElementById('btnC');
-btnC=function(){
-//获取id
-var city=document.getElementById('city');
-//查找#city下所有li节点
-var lis=city.getElementsByTagsName("li")
-alert(lis)
-};

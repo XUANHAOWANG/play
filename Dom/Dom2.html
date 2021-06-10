@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Dom1.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div>
+            <ul id="city">
+                <li id="bj"> 北京</li>
+                <li>上海</li>
+                <li>成都</li>
+            </ul>
+            <button id="btn">city</button>
+            <button id="btn1"> 节点</button>
+            </div>
+            <div>
+                <ul id="game">
+                    <li>GTA</li>
+                    <li>WOW</li>
+                    <li>EVE</li>
+                </ul>
+                <button id="btn2">获取第一个child node</button>
+                <button id="btn3">获取第一个last node</button>
+                <button id="btn4">返回game父节点</button>
+                </div>
+                <div>
+                    <ul>
+                        <li id="apple">苹果</li>
+                        <li id="wm">西瓜</li>
+                        <li>梨子</li>
+                    </ul>
+                    <button id="btn5">返回西瓜的前一个兄弟节点</button>
+                    </div>
+                    <div>
+                        <input id="user" name="user" type="text" value="abcde">
+                        <button id="btn6">读取user</button>
+                        <button id="btn7">设置user</button>
+                        <button id="btn8">获取北京的文本</button>
+                    </div>
+        <script src="Dom2.js"></script>
+    </body>
+</html>
