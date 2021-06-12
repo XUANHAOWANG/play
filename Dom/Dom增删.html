@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+       
+<ul id="city">
+    <li id="bj"> 北京</li>
+    <li>上海</li>
+    <li>成都</li>
+    <li>尼玛</li>
+</ul>
+<div><button id="btn1">创建一个 广州节点 添加到city 节点下</button></div>
+<div><button id="btn2">将广州节点 插入到 北京节点前</button></div>
+<div><button id="btn3">使用广州节点替换北京</button></div>
+<div><button id="btn4">删除#bj节点</button></div>
+<div><button id="btn5">读取#city内的HTML代码</button></div>
+<div><button id="btn6">设置#bj的HTML代码</button></div>
+&nbsp&nbsp&nbsp&nbsp
+<div>
+    <table id="table">
+        <tr>
+<th>name</th>
+<th>email</th>
+<th>salary</th>
+<th>&nbsp</th>
+</tr>
+<tr>
+    <td>tom</td>
+    <td>tom@tom.com</td>
+    <td>5000</td>
+    <td><a href="deleteEmp?id=001">delete</a></td>
+</tr>
+<tr>
+    <td>jerry</td>
+    <td>jerry@jerry.com</td>
+    <td>6000</td>
+    <td><a href="deleteEmp?id=002">delete</a></td>
+</tr>
+    </table>&nbsp&nbsp
+    <table>
+        <tr>
+            <td class="word">name:</td>
+            <td class="inp"><input type="text" name="empName" id="empName"/></td>
+        </tr>
+        <tr>
+            <td class="word">email:</td>
+            <td class="inp"><input type="text" name="email" id="email"/></td>
+            </tr>
+            <tr>
+                <td class="word">salary:</td>
+                <td class="inp"><input type="text" name="salary" id="salary"/></td>
+                </tr>
+    </table>
+    <button id="btn7">submit</button></div>
+        <script src="DomZS.js" async defer></script>
+    </body>
+</html>
