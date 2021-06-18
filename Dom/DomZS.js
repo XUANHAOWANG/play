@@ -122,5 +122,5 @@ var allA=document.getElementsByTagName('a');
 
 //注意 for循环在开始时就会执行
 for(var i=0;i<allA.length; i++){
-    allA[i].onclick=del;
+    allA[i].onclick=del;//当我们点击时 for循环已经先一步执行完毕
 }

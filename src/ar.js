@@ -7,4 +7,3 @@
 //     console.log(arguments.callee);//对应当前执行的函数
 // };
 // fun(1,2,3);
-
