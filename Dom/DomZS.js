@@ -68,59 +68,98 @@ click('#btn6',function(){
 })
 
 
-//删除功能
-var del=function(){
-    //点击超链接 删除所在一行
-    //点击哪个 超链接就是谁
-    //获取当前tr
-   var tr= this.parentNode.parentNode
-   //删除前弹出提示框  confirm() 需要一个字符串来作为提示
-  if(confirm('确认删除吗？'+tr.firstElementChild.innerHTML)) {
-   tr.parentNode.removeChild(tr)}
-    //点击超链后会跳转 这是默认行为 
-    //此时 我们不希望默认跳转 可以通过在函数最后 return false来取消跳转
-    return false
-}
-//创建正则表达式
-var REname=/^[A-Z][A-z]{2,8}$/;
-var REemail=/^\w{3,}(\.\w)*@[A-z0-9]+(\.[A-z]{2,5}){1,3}$/i;
-var REsalary=/^[0-9]{1,9}/;
+
+// //删除功能
+// var del=function(){
+//     //点击超链接 删除所在一行
+//     //点击哪个 超链接就是谁
+//     //获取当前tr
+//    var tr= this.parentNode.parentNode
+//    //删除前弹出提示框  confirm() 需要一个字符串来作为提示
+//   if(confirm('确认删除吗？'+tr.firstElementChild.innerHTML)) {
+//    tr.parentNode.removeChild(tr)}
+//     //点击超链后会跳转 这是默认行为 
+//     //此时 我们不希望默认跳转 可以通过在函数最后 return false来取消跳转
+//     return false
+// }
+// //创建正则表达式
+// var REname=/^[A-Z][A-z]{2,8}$/;
+// var REemail=/^\w{3,}(\.\w)*@[A-z0-9]+(\.[A-z]{2,5}){1,3}$/i;
+// var REsalary=/^[0-9]{1,9}/;
 
 
-//获取文本添加新内容
-var submit=document.getElementById('btn7')
+// //获取文本添加新内容
+// var submit=document.getElementById('btn7')
+// submit.onclick=function(){
+//     //获取表格
+// var table=document.getElementById('table')
+// var tbody=table.getElementsByTagName('tbody')[0]
+//     //获取信息  
+//     var name=document.querySelector('#empName').value
+//      var email=document.querySelector('#email').value
+//      var salary=Math.abs(document.querySelector('#salary').value)
+//     //test正则表达式
+// if(REname.test(name)&REsalary.test(salary)&REemail.test(email)){
+// //创建tr和td标签
+// var tr=document.createElement('tr')
+// tr.innerHTML='<td>'+name+'</td>'+
+// '<td>'+email+'</td>'+
+// '<td>'+salary+'</td>'+
+// "<td><a href='javascript:;' >delete</a></td>"
+// tbody.appendChild(tr)
+// }else{
+//     alert('check your detail and do again')
+// }
+// var a=tr.getElementsByTagName('a')[0];
+// a.onclick=del;
+
+// }
+
+
+// //点击超链后 删除员工信息
+// //获取超链接
+// var allA=document.getElementsByTagName('a');
+// //为每个连接绑定点击响应
+
+// //注意 for循环在开始时就会执行
+// for(var i=0;i<allA.length; i++){
+//     allA[i].onclick=del;//当我们点击时 for循环已经先一步执行完毕
+// }
+
+
+//首先创建删除函数 点击超链接delete删除行
+function del(){
+let tr=this.parentNode.parentNode//必须使用this 当点击的是谁 谁就是这个tr
+if(confirm("Are you sure you want to delete"+' '+tr.firstElementChild.innerHTML)){
+    tr.parentNode.removeChild(tr)}
+return false}
+
+let submit=document.getElementById('btn7');
 submit.onclick=function(){
-    //获取表格
-var table=document.getElementById('table')
-var tbody=table.getElementsByTagName('tbody')[0]
-    //获取信息  
-    var name=document.querySelector('#empName').value
-     var email=document.querySelector('#email').value
-     var salary=Math.abs(document.querySelector('#salary').value)
-    //test正则表达式
-if(REname.test(name)&REsalary.test(salary)&REemail.test(email)){
-//创建tr和td标签
-var tr=document.createElement('tr')
+   
+//现在获取表单 和tbody内容  tbody隐藏在表单内
+let table=document.getElementById('table');
+let tbody=table.getElementsByTagName('tbody')[0];
+
+//现在获取name email 和salary input元素
+let name=document.getElementById('name').value;
+let email=document.getElementById('email').value;
+let salary=document.getElementById('salary').value;
+//创建tr元素 其中要包括四个td
+let tr=document.createElement('tr')
 tr.innerHTML='<td>'+name+'</td>'+
 '<td>'+email+'</td>'+
 '<td>'+salary+'</td>'+
-"<td><a href='javascript:;' >delete</a></td>"
-tbody.appendChild(tr)
-}else{
-    alert('check your detail and do again')
-}
-var a=tr.getElementsByTagName('a')[0];
-a.onclick=del;
-
+"<td><a href='javascript:;' >delete</a></td>";
+tbody.appendChild(tr);
+let newA=tr.getElementsByTagName('a')[0];
+newA.onclick=del
 }
 
-
-//点击超链后 删除员工信息
-//获取超链接
-var allA=document.getElementsByTagName('a');
-//为每个连接绑定点击响应
-
-//注意 for循环在开始时就会执行
-for(var i=0;i<allA.length; i++){
-    allA[i].onclick=del;//当我们点击时 for循环已经先一步执行完毕
+//获得每一个超链
+let a=document.getElementsByTagName('a');//这里得到的是一个数组
+for(let i = 0; i <a.length; i++){
+   a[i].onclick=del
 }
+
+
