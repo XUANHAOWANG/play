@@ -26,11 +26,30 @@
 //  console.log(Math.sqrt(45));
 //  console.log(Math.pow(10,5));
 
-function exampleJavaScript(arr) {
-	let newArr = []; 
-  for(let i= 0; i < arr.length; i++){    
-     newArr.push(Math.max.apply(0,arr[i]));
+// function exampleJavaScript(arr) {
+// 	let newArr = []; 
+//   for(let i= 0; i < arr.length; i++){    
+//      newArr.push(Math.max.apply(0,arr[i]));
+// }
+//  return newArr
+// }
+// console.log(exampleJavaScript([[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]]));
+
+// let a=[1, 2, 3, 4, 5]
+// console.log(Math.max(...a))
+
+function max(a){
+  let b=[];
+for(let i=0;i<a.length;i++){
+console.log(Math.max(...a[i]))
 }
- return newArr
 }
-console.log(exampleJavaScript([[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]]));
+max([[123,45,8],[4,5,4,68],[78979,48]])
+
+
+let ab=[[[1,2,3]],[[4,5,6]]]
+for(let i=0;i<ab.length;i++){
+  console.log(Math.max.apply(0,...ab[i]))
+}
+
+

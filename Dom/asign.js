@@ -68,4 +68,16 @@ obj.attachEvent('on'+eventstr,callBack);
 bind(btn1,'click',function(){
     alert('1');
     
-})
+});
+
+//事件的传播
+//先捕获后冒泡
+// 1.捕获时 由外层向内捕获  例如图中捕获顺序为 3.2.1
+//2. 目标阶段 捕获结束时 开始触发事件
+//3. 事件从目标元素向他的祖先元素传递，一次触发祖先上的事件
+let box1 = document.getElementById('box1');
+let box2= document.getElementById('box2');
+let box3 = document.getElementById('box3');
+bind(box1,'click',function(){alert('box1')});
+bind(box2,'click',function(){alert('box2')});
+bind(box3,'click',function(){alert('box3')});
