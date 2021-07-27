@@ -1,0 +1,5 @@
+const test= require('./test')
+const fs = require('fs')
+fs.writeFileSync('mynotes.text','hello world')
+fs.appendFileSync('mynotes.text','hellow again')
+test()
